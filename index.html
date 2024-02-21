@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="finance-tracker">
+    <h2>Finance Tracker</h2>
+    <div class="income-section">
+        <label for="incomeAmount">Income Amount:</label>
+        <input type="number" id="incomeAmount" placeholder="Enter your income">
+        <select id="incomeFrequency">
+            <option value="weekly">Weekly</option>
+            <option value="fortnightly">Fortnightly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+    </div>
+
+    <div class="expenses">
+        <h3>Expenses</h3>
+        <div class="expense">
+            <label>Mortgage/Rent:</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyMortgage" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyMortgage" value="fortnightly">
+            Weekly <input type="radio" name="frequencyMortgage" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Loans:</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyLoans" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyLoans" value="fortnightly">
+            Weekly <input type="radio" name="frequencyLoans" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Utilities (Gas, Electricity):</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyUtilities" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyUtilities" value="fortnightly">
+            Weekly <input type="radio" name="frequencyUtilities" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Groceries:</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyGroceries" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyGroceries" value="fortnightly">
+            Weekly <input type="radio" name="frequencyGroceries" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Transportation (Petrol, Public Transport):</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyTransportation" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyTransportation" value="fortnightly">
+            Weekly <input type="radio" name="frequencyTransportation" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Entertainment (Movies, Dining Out):</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyEntertainment" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyEntertainment" value="fortnightly">
+            Weekly <input type="radio" name="frequencyEntertainment" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Child Maintenance:</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyChildMaintenance" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyChildMaintenance" value="fortnightly">
+            Weekly <input type="radio" name="frequencyChildMaintenance" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Health Insurance:</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyHealthInsurance" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyHealthInsurance" value="fortnightly">
+            Weekly <input type="radio" name="frequencyHealthInsurance" value="weekly">
+        </div>
+        <div class="expense">
+            <label>Gym Membership:</label>
+            <input type="number" class="expenseAmount" placeholder="Amount">
+            Monthly <input type="radio" name="frequencyGym" value="monthly" checked>
+            Fortnightly <input type="radio" name="frequencyGym" value="fortnightly">
+            Weekly <input type="radio" name="frequencyGym" value="weekly">
+        </div>
+    </div>
+
+    <div class="savings-goal-section">
+        <label for="savingsGoal">Savings Goal:</label>
+        <input type="number" id="savingsGoal" placeholder="Enter your savings goal">
+    </div>
+    <button onclick="calculateSavings()">Calculate</button>
+    <div id="results"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
